@@ -23,9 +23,11 @@ export const StyledHero = styled.section`
     font-size: 4rem;
     padding-bottom: 1rem;
     text-shadow: #333 3px 3px;
+    > a {
+      background: none;
+    }
   }
-
-  > article > p {
+  > h1 > article > p {
     font-size: 1.5rem;
     font-weight: 200;
     text-shadow: #333 3px 3px;

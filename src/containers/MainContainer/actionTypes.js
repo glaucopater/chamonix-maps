@@ -1,0 +1,4 @@
+export default {
+  MAP_DETAILS_LOADED: 'MAP_DETAILS_LOADED',
+  MAPS_LOADED: 'MAPS_LOADED',
+};

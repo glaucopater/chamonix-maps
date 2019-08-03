@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyledMapDetail } from './styled';
+import { StyledMapCard } from './styled';
 import Image from '../Image';
 import strings from '../../constants/strings';
 
-const MapDetail = ({ id, name, skiDifficulty, shortDescription }) => (
-  <StyledMapDetail>
+const MapCard = ({ id, name, skiDifficulty, shortDescription }) => (
+  <StyledMapCard>
     <figure>
       <Image src={'random'} alt={name} />
       <figcaption>
@@ -18,7 +18,7 @@ const MapDetail = ({ id, name, skiDifficulty, shortDescription }) => (
     </figure>
 
     <p>{shortDescription}</p>
-  </StyledMapDetail>
+  </StyledMapCard>
 );
 
-export default MapDetail;
+export default MapCard;

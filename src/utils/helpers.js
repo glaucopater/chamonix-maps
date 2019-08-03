@@ -7,6 +7,10 @@ export const transformData = data => {
   }));
 };
 
+export const searchData = (data, id) => {
+  return data.filter(mapItem => +id === mapItem.id);
+};
+
 export const getRandomInt = (min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
