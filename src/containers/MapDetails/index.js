@@ -8,6 +8,7 @@ import { fetchMapDetails } from './actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { StyledMapDetails, StyledMapDetailsGrid } from './styled';
+import { sortData } from '../../utils/helpers';
 
 class MapDetails extends React.PureComponent {
   static propTypes = {
@@ -31,7 +32,10 @@ class MapDetails extends React.PureComponent {
     if (!MapDetails || !MapDetails.data) {
       return <Loading />;
     } else {
-      const mapDetailsData = MapDetails.data ? MapDetails.data : [];
+      const queryString = this.props.location.search.replace('?', '');
+      const mapDetailsData = MapDetails.data
+        ? sortData(MapDetails.data, queryString)
+        : [];
 
       if (mapDetailsData.length === 0) {
         return <EmptyResults />;
