@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledMapDetail = styled.li`
+export const StyledMapDetail = styled.div`
   border: 1px solid #e2e2e250;
   border-radius: 0.5rem;
   background: #000;

@@ -36,9 +36,10 @@ export const StyledHero = styled.section`
   > article > a {
     padding: 1rem;
     margin-left: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
   a {
-    background-color: blue;
+    background-color: royalblue;
   }
 `;
