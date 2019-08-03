@@ -1,12 +1,17 @@
 import React from 'react';
 import { StyledHero } from './styled';
+import strings from '../../constants/strings';
 const Hero = () => {
   return (
     <StyledHero>
-      <h1>Chamonix Maps</h1>
+      <h1>{strings.pageTitle} </h1>
       <article>
-        <a href="/?sort=name">Sort by name</a>
-        <a href="/?sort=difficulty">Sort by difficulty</a>
+        <a href="/?sort=name">{strings.sortByName} </a>
+        <a href="/?sort=name&direction=DESC"> {strings.sortByNameDesc} </a>
+        <a href="/?sort=difficulty"> {strings.sortByDifficulty}</a>
+        <a href="/?sort=difficulty&direction=DESC">
+          {strings.sortByDifficultyDesc}
+        </a>
       </article>
     </StyledHero>
   );
