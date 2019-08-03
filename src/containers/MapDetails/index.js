@@ -8,16 +8,15 @@ import { fetchMapDetails } from './actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { StyledMapDetails, StyledMapDetailsGrid } from './styled';
-import { sortData } from '../../utils/helpers';
 
 class MapDetails extends React.PureComponent {
   static propTypes = {
-    MapDetails: PropTypes.object,
-    fetchMapDetails: PropTypes.func,
+    mapDetails: PropTypes.object,
+    fetchmapDetails: PropTypes.func,
   };
 
   async update(match) {
-    this.props.fetchMapDetails(match.params.name);
+    this.props.fetchMapDetails(match.params.id);
   }
 
   componentDidMount() {
@@ -28,27 +27,20 @@ class MapDetails extends React.PureComponent {
   }
 
   render() {
-    const MapDetails = this.props.data;
-    if (!MapDetails || !MapDetails.data) {
+    const mapDetailsData = this.props.data;
+    if (!mapDetailsData || !mapDetailsData.data) {
       return <Loading />;
     } else {
-      const queryString = this.props.location.search.replace('?', '');
-      const mapDetailsData = MapDetails.data
-        ? sortData(MapDetails.data, queryString)
-        : [];
-
-      if (mapDetailsData.length === 0) {
+      if (mapDetailsData.data && mapDetailsData.data.length === 0) {
         return <EmptyResults />;
       }
-
+      const mapDetail = mapDetailsData.data[0];
       return (
         <Fragment>
           <Hero />
           <StyledMapDetails>
             <StyledMapDetailsGrid>
-              {mapDetailsData.map((mapItem, index) => (
-                <MapDetail key={index} {...mapItem} />
-              ))}
+              <MapDetail key={mapDetail.id} {...mapDetail} />
             </StyledMapDetailsGrid>
           </StyledMapDetails>
         </Fragment>

@@ -4,7 +4,9 @@ import strings from '../../constants/strings';
 const Hero = () => {
   return (
     <StyledHero>
-      <h1>{strings.pageTitle} </h1>
+      <h1>
+        <a href="/"> {strings.pageTitle} </a>
+      </h1>
       <article>
         <a href="/?sort=name">{strings.sortByName} </a>
         <a href="/?sort=name&direction=DESC"> {strings.sortByNameDesc} </a>
