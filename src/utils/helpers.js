@@ -7,6 +7,26 @@ export const transformData = data => {
   }));
 };
 
+export const transformDetailsData = data => {
+  return data.map(mapItem => ({
+    id: mapItem.id,
+    name: mapItem.name,
+    description: mapItem.description,
+    skiDifficulty: mapItem.ski_difficulty,
+    geoData: mapItem.geo_data,
+  }));
+};
+
+export const transformCoordinates = data => {
+  return data.map(coordinates => {
+    return coordinates.map(coord => {
+      const x = coord[1];
+      const y = coord[0];
+      return [x, y];
+    });
+  });
+};
+
 export const searchData = (data, id) => {
   return data.filter(mapItem => +id === mapItem.id);
 };

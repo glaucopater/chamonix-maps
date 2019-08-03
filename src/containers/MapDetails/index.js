@@ -7,7 +7,7 @@ import Hero from '../../components/Hero';
 import { fetchMapDetails } from './actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { StyledMapDetails, StyledMapDetailsGrid } from './styled';
+import { StyledMapDetails } from './styled';
 
 class MapDetails extends React.PureComponent {
   static propTypes = {
@@ -39,9 +39,7 @@ class MapDetails extends React.PureComponent {
         <Fragment>
           <Hero />
           <StyledMapDetails>
-            <StyledMapDetailsGrid>
-              <MapDetail key={mapDetail.id} {...mapDetail} />
-            </StyledMapDetailsGrid>
+            <MapDetail key={mapDetail.id} {...mapDetail} />
           </StyledMapDetails>
         </Fragment>
       );
