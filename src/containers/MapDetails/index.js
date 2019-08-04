@@ -35,11 +35,13 @@ class MapDetails extends React.PureComponent {
         return <EmptyResults />;
       }
       const mapDetail = mapDetailsData.data[0];
+      const { id, name, ...otherProps } = mapDetail;
       return (
         <Fragment>
           <Hero />
           <StyledMapDetails>
-            <MapDetail key={mapDetail.id} {...mapDetail} />
+            <h2>{name}</h2>
+            <MapDetail key={id} {...otherProps} />
           </StyledMapDetails>
         </Fragment>
       );

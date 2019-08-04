@@ -1,9 +1,11 @@
 import React from 'react';
 import { StyledEmptyResults } from './styled';
+import strings from '../../constants/strings';
+
 const EmptyResults = () => {
   return (
     <StyledEmptyResults className="EmptyResults">
-      {'No results'}
+      {strings.noResults}
     </StyledEmptyResults>
   );
 };

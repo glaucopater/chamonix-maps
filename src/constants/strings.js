@@ -9,4 +9,5 @@ export default {
   sortByDifficultyDesc: 'Sort by difficulty (desc)',
   sortByName: 'Sort by name',
   sortByNameDesc: 'Sort by name (desc)',
+  noResults: 'No results',
 };
