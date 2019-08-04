@@ -12,7 +12,7 @@ const MapDetail = ({ id, name, skiDifficulty, description, geoData }) => (
       <Image src={'random'} alt={name} />
       <figcaption>
         <h3>
-          {name} {' | '} {strings.difficulty}
+          {strings.difficulty}
           {skiDifficulty}
         </h3>
       </figcaption>

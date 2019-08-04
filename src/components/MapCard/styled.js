@@ -17,6 +17,8 @@ export const StyledMapCard = styled.li`
     position: relative;
     min-height: 220px;
     max-height: 220px;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
   }
 
   > figure > img {
