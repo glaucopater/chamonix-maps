@@ -5,6 +5,8 @@ The main page is a grid designed with CSS Grid, the page is responsive, so even 
 
 ![Demo](/demo/home.jpg)
 
+For the map path line visualisation I used https://react-leaflet.js.org/ which is an open-source JavaScript library for mobile-friendly interactive map.
+
 Unit tests are present, for them I used Jest + Enzyme.
 
 ## Tech notes
