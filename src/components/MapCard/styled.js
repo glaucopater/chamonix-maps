@@ -3,20 +3,20 @@ import styled from 'styled-components';
 export const StyledMapCard = styled.li`
   border: 1px solid #e2e2e250;
   border-radius: 0.5rem;
-  background: #000;
+  background: #eee;
+  opacity: 0.8;
+  transition: 0.5s ease-in;
+
+  :hover {
+    opacity: 1;
+    transition: 0.5s ease-out;
+  }
 
   > figure {
     overflow: hidden;
-    border-radius: 0.5rem;
     position: relative;
-    opacity: 0.8;
-    transition: 0.5s ease-in;
-  }
-
-  > figure:hover {
-    opacity: 1;
-    transition: 0.5s ease-out;
-    background: #000;
+    min-height: 220px;
+    max-height: 220px;
   }
 
   > figure > img {
@@ -28,8 +28,6 @@ export const StyledMapCard = styled.li`
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
   }
 
   > figure > figcaption > h3 {
@@ -39,17 +37,12 @@ export const StyledMapCard = styled.li`
     text-transform: capitalize;
   }
 
-  > figure > figcaption > p {
-    color: white;
-    padding: 0.75rem;
-    font-size: 1.25rem;
-  }
-
   > p {
     font-size: 1rem;
     line-height: 1.5;
     padding: 1rem 0.75rem;
     color: #666666;
+    text-transform: capitalize;
   }
 
   > a {

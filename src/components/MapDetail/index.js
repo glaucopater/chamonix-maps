@@ -3,19 +3,20 @@ import { StyledMapDetail } from './styled';
 import Image from '../Image';
 import MapPath from '../MapPath';
 import strings from '../../constants/strings';
+import { NavLink } from 'react-router-dom';
 
 const MapDetail = ({ id, name, skiDifficulty, description, geoData }) => (
   <StyledMapDetail>
-    <MapPath geoData={geoData} />
+    {geoData && <MapPath geoData={geoData} />}
     <figure>
       <Image src={'random'} alt={name} />
       <figcaption>
-        <a href={`/map/${id}/`}>
+        <NavLink to={`/map/${id}/`}>
           <h3>
             {name} {' | '} {strings.difficulty}
             {skiDifficulty}
           </h3>
-        </a>
+        </NavLink>
       </figcaption>{' '}
     </figure>
     <p>{description}</p>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledMapDetail = styled.div`
   border: 1px solid #e2e2e250;
   border-radius: 0.5rem;
-  background: #000;
+  background: #eee;
 
   > figure {
     overflow: hidden;
@@ -11,6 +11,7 @@ export const StyledMapDetail = styled.div`
     position: relative;
     opacity: 0.8;
     transition: 0.5s ease-in;
+    margin: 1rem 0;
   }
 
   > figure:hover {
