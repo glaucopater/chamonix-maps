@@ -1,6 +1,5 @@
 # A Chamonix Maps SPA implemented with React, Redux, React Router, Styled Components...
 
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c00492d7-7ef8-472c-9559-8a57631e8cce/deploy-status)](https://app.netlify.com/sites/chamonix-maps/deploys)
 
 [Live Demo](https://chamonix-maps.netlify.app/)
