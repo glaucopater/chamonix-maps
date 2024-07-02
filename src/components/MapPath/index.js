@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, TileLayer, Polyline } from 'react-leaflet';
+import { MapContainer as Map, TileLayer, Polyline } from 'react-leaflet';
 import { transformCoordinates } from '../../utils/helpers';
 import { StyledWrapper } from './styled';
 import { DEFAULT_MAP_ZOOM } from '../../constants';

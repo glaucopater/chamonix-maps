@@ -1,4 +1,4 @@
-export default {
+const strings = {
   pageTitle: 'Chamonix Maps',
   maps: 'Maps',
   details: 'Details',
@@ -11,3 +11,6 @@ export default {
   sortByNameDesc: 'Sort by name (desc)',
   noResults: 'No results',
 };
+
+
+export default strings;
