@@ -3,6 +3,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c00492d7-7ef8-472c-9559-8a57631e8cce/deploy-status)](https://app.netlify.com/sites/chamonix-maps/deploys)
 
+[Live Demo](https://chamonix-maps.netlify.app/)
+
 For styling after a first prototype in plain CSS I decided to adopt Styled Components, which perform very well and allows to customize any single components.
 The main page is a grid designed with CSS Grid, the page is responsive, so even on mobile devices is visible.
 
