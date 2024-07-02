@@ -1,5 +1,8 @@
 # A Chamonix Maps SPA implemented with React, Redux, React Router, Styled Components...
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c00492d7-7ef8-472c-9559-8a57631e8cce/deploy-status)](https://app.netlify.com/sites/chamonix-maps/deploys)
+
 For styling after a first prototype in plain CSS I decided to adopt Styled Components, which perform very well and allows to customize any single components.
 The main page is a grid designed with CSS Grid, the page is responsive, so even on mobile devices is visible.
 
@@ -29,3 +32,7 @@ Launches the test runner in the interactive watch mode.<br>
 ## Credits
 
 Used images were retrieved from Unsplash
+
+## 2024 Notes
+Master version is keeping the old project structure and legacy dependencies, if you try to migrate it will break the app.
+The purpose is to keep the historical react stateful+redux approach of 2019-2020.
