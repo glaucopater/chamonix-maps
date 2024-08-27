@@ -14,7 +14,7 @@
     "react-moment": "^1.1.1",
     "react-redux": "^7.2.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-mock-store": "^1.5.4",
@@ -48,7 +48,7 @@
     "imagemin": "^7.0.1",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
-    "jest-cli": "^26.6.3",
+    "jest-cli": "^29.7.0",
     "jest-styled-components": "^7.0.3"
   },
   "volta": {
